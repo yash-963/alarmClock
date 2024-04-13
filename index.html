@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Alarm Clock</title>
+</head>
+
+<body>
+    <main>
+        <!-- real time clock -->
+        <div class="clock mt-5 mx-auto" id="clock">
+            <div class="date"></div>
+            <div class="dot"></div>
+            <div class="clockHands position-relative ">
+                <div class="hourHand"></div>
+                <div class="minuteHand"></div>
+                <div class="secondHand"></div>
+            </div>
+            <div class="numbers">
+                <span class="count3">3</span>
+                <span class="count6">6</span>
+                <span class="count9">9</span>
+                <span class="count12">12</span>
+            </div>
+            <div class="minutesLines"></div>
+        </div>
+        <hr>
+        <!-- set time for alarm -->
+        <div class="setAlarmMainBox d-flex justify-content-center">
+            <div class="setAlarm ">
+                <select name="hour" id="hour"> </select>
+                <select name="minute" id="minute"> </select>
+                <select name="second" id="second"> </select>
+                <select name="dayOrNight" id="dayOrNight">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </div>
+            <button class="ms-3 setAlarmButton">Set Alarm</button>
+        </div>
+        <hr>
+        <!-- alarms List -->
+        <div class="alarmTime text-center fw-bold">
+            <p>Alarms</p>
+            <div class="alarmsList d-flex flex-column justify-content-center align-items-center" id="alarmList">
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript-->
+    <script src="script.js"></script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

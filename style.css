@@ -1,0 +1,178 @@
+/* clock outer design */
+.clock {
+    background: #ffffff;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 8px solid #e2de47cc;
+    position: relative;
+    box-shadow: 0 2px 28px -5px rgb(114 117 41 / 80%);
+}
+
+/* clock mid circle design */
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #e6e736;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    box-shadow: 0 2px 4px -1px #848121;
+}
+
+/* clock hands */
+.clockHands {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: fit-content;
+    height: 10px;
+    width: 10px;
+}
+
+/* hour hand */
+.hourHand {
+    position: absolute;
+    z-index: 5;
+    width: 4px;
+    height: 65px;
+    background: #000;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    transform-origin: 50% 108%;
+
+}
+
+/* minute hand */
+.minuteHand {
+    position: absolute;
+    z-index: 6;
+    width: 4px;
+    height: 100px;
+    background: #000;
+    /* top: 46px;
+    left: 50%;
+    margin-left: -2px; */
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform-origin: 50% 105px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+/* second hand */
+.secondHand {
+    position: absolute;
+    z-index: 7;
+    width: 2px;
+    height: 120px;
+    background: #e1550d;
+    /* top: 26px;
+    lefT: 50%; */
+    /* margin-left: -1px; */
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform-origin: 80% 102%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+}
+
+/* hour numbers */
+.numbers span {
+    display: inline-block;
+    position: absolute;
+    color: #333;
+    font-size: 22px;
+    font-weight: 500;
+    z-index: 4;
+}
+
+.count12 {
+    top: 30px;
+    left: 50%;
+    margin-left: -9px;
+}
+
+.count3 {
+    top: 135px;
+    right: 30px;
+}
+
+.count6 {
+    bottom: 30px;
+    left: 50%;
+    margin-left: -5px;
+}
+
+.count9 {
+    left: 32px;
+    top: 135px;
+}
+
+/* minutes without number */
+
+.minutesLines {
+    position: absolute;
+    z-index: 2;
+    width: 3px;
+    height: 15px;
+    background: #0d0d0d;
+    left: 50%;
+    margin-left: -1px;
+    transform-origin: 50% 150px;
+    border-radius: 0 0 3px 3px;
+    /* transform: rotate(6deg); */
+    top: 2px;
+}
+
+.minutesLines:nth-of-type(5n) {
+    position: absolute;
+    z-index: 2;
+    width: 4px;
+    height: 25px;
+    background: #0d0d0d;
+    left: 50%;
+    /* margin-left: -1px; */
+    /* transform-origin: 50% 150px; */
+}
+
+/* date */
+.date {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    border-radius: 7px;
+    background: #d4d4d4;
+    text-align: center;
+    color: #000;
+    font-size: 12px;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+}
+
+/* alarm timies css */
+.box {
+    background-color: #e4e4e4;
+    width: 310px;
+    border-radius: 5px;
+}
+
+.delete button {
+    border-radius: 20px;
+}
+
+.setAlarmButton {
+    border-radius: 20px;
+}
