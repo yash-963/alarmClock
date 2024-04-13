@@ -170,7 +170,7 @@ function playAlarm(alarmTimeHour, TimeInMinute, timeInSec, alarmID) {
         for (let i of alarmtimesAdded) {
             if (i.id == alarmID) {
                 if (i.played == false) {
-                    let audio = new Audio('media/alarmSound.mp3')
+                    let audio = new Audio('Media/alarmSound.mp3')
                     audio.play();
                     alert("Alarm Played")
                     i.played = true
